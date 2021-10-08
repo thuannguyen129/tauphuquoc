@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blooger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+
+<br>
+    <script type="text/javascript">
+        $(function () {  
+        $("#datepicker").datepicker({         
+        autoclose: true,         
+        todayHighlight: true 
+        }).datepicker('update', new Date());
+        });
+        </script>
+<style>label{
+    margin-left: 20px;
+    }
+    #datepicker{
+    width:180px; 
+    margin: 0 20px 20px 20px;
+    }
+    #datepicker > span:hover{
+    cursor: pointer;
+    }</style>
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav text-lg-center">
+        <div class="nav-menu flex-row ">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Cao Tốc Phú Quốc</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="Index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Dịch vụ</a> 
+                    </li>
+                    <li class="nav-link">
+                        <a href="muave.html">Mua vé Trực Tuyến</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Khuyến Mãi</a>
+                    </li>
+                    <li class="nav-link" >
+                        <a href="#" >Login</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h3>Tours & Travels</h3>
+                <h1>Amazing Place on Earth</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section>
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <section>
+            
+    <div class="container-fluid" style="margin-top: 37px;">
+        <div class="card findroute">
+
+            <div class="card-block">
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class=" radio-toggle float-left">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="rdoRoundTrip" id="chkOneWay" value="option1" checked>
+                                    Một chiều
+                                </label>
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="rdoRoundTrip" id="chkRoundTrip" value="option2">
+                                    Khứ hồi
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="material-icons">directions_boat</i>
+                            </span>
+                            <div class="form-group">
+                                <select id="slRoute" name="slRoute" class="form-control uppercase">
+                                    
+                                    <option value="-1">Tuyến</option>
+                                        <option value="2">Nam Du - Phú Quốc </option>
+                                        <option value="1">Phú Quốc - Nam Du</option>
+                                        <option value="11">Rạch Gía- Phú Quốc</option>
+                                        <option value="15">Phú Quốc -Rạch Gía</option>
+                                        <option value="26">Cà Mau - Phú Quốc</option>
+                                        <option value="16">Phú Quốc - Cà Mau</option>
+                                        <option value="12">Hà Tiên - Phú Quốc</option>
+                                        <option value="5">Phú Quốc - Hà Tiên</option>
+                                          </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="material-icons">supervisor_account</i>
+                            </span>
+                            <input min="1" max="15" type="number" id="NoOfPassenger" name="NoOfPassenger" class="form-control" value="1" required>
+                        </div>
+                    </div>  
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="icofont icofont-ui-calendar font-10"></i>
+                                
+                            </span>
+                              <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 ">
+
+                        <div class="input-group content-roundtrip hide ">
+                            <span class="input-group-addon  ">
+                                <i class="icofont icofont-ui-calendar font-20"></i>
+                                
+                            </span>
+                            <input type="date" id="datemin" name="datemin" min="2000-01-02" required onkeydown="return false" disabled />
+                        </div>
+                        
+
+                    </div>
+                    <div class="col-sm-2">
+
+                        <div class="input-group">
+                            <button id="btnSearchBoat" type="button" class="btn btn-primary btn-default" onclick="loadWizardData();">
+                              <a href="booking.html" > <span class="glyphicon glyphicon-search" > </span>   T&#236;m t&#224;u
+                            </button></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box"></div>
+        <div class="row m-t-10 text-center">
+
+            <div class="col-sm-6">
+                <div class="panel panel-primary schedule-boat">
+                    <div class="panel-heading">
+                        
+                        <h3 class="panel-title text-center">LỊCH T&#192;U CHẠY</h3>
+                    </div>
+                    <div class="content">
+						<a href='#'>
+                        <img src="assets/Blog-post/ScheduleBoat5.jpg" style="width:60%;" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-primary place-boat">
+                    <div class="panel-heading">
+                        
+                        <h3 class="panel-title text-center">ĐIỂM ĐẾN</h3>
+                    </div>
+                    <div class="content">
+                        <img src="/Blooger_Website-master/assets/Blog-post/con-dao.jpg" style="width:60%;" alt="">
+                    </div>
+                </div>
+            </div>
+      
+            
+        </div>
+    </div>
+
+
+        </section>
+
+
+
+        <!-- ---------------------- Site Content -------------------------->
+
+        
+   
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+</br>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2019 All rights reserved | made by
+             
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
